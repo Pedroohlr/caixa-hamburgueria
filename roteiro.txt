@@ -1,0 +1,9 @@
+ja temos: {
+    dado uma entrada que representa o numero de lanches que queremos montar, 
+    teremos como saida: {
+        o detalhe descritivo linha a linha e totalizado dos itens necessarios para essa montagem
+    } 
+    dado que para montagem de um lanche ultilizasse o valor pesado equivalente de 1 unidade de cada produto. Deve-se então calcular a quantidade final e multiplicala pelo valor unitario de cada item. O programa então exibira a sua saida em uma tabela com o seguinte formato: {
+        Seq	Descrição | Quantidade | valor unidade | valor total
+    }
+}
