@@ -15,22 +15,22 @@
     <script>
         document.addEventListener("DOMContentLoaded", ()=> {
         var qtde = prompt("Digite a quantidade de lanches");
-        qtde = Number(qtde)
+        qtde = Number(qtde);
 
         //preço de cada protudo por KG
         var paoUnPrice = 3; //unidade 
         var queijoUnPrice = 22;
         var hamburguerUnPrice = 15;
         var presuntoUnPrice = 25;
-
-        // o peso de cada item q vai em cada lanche para fazer a soma
+            
+        //o peso de cada item q vai em cada lanche para fazer a soma
         var paoQtdUn = 1;
         var queijoQtdUn = 0.080;
         var hamburguerQtdUn = 0.100;
         var presuntoQtdUn = 0.050;
 
-        //QTDE de KGs de cada protudo
-        var paoQTD = qtde*paoUnPrice;
+        //valor de cada protuto por kilo
+        var paoQTD = qtde*paoQtdUn;
         var queijoQTD = qtde*queijoQtdUn;
         var hamburguerQTD = qtde*hamburguerQtdUn;
         var presuntoQTD = qtde*presuntoQtdUn;
@@ -51,7 +51,7 @@
             <td>Seq</td>
             <td>Descrição</td>
             <td>Quantidade</td>
-            <td>valor unidade</td>
+            <td>valor KG/UN</td>
             <td>valor total</td>
         </tr>
         <tr>
@@ -80,11 +80,11 @@
             <td>R$${(presuntoUnPrice).toFixed(3)}</td>
             <td>R$${presuntoValorTotal.toFixed(2)}</td>
         </tr>
-    </table>
-
-    <p>Então, para <strong>${qtde}</strong> lanches, ficara em um falor de <strong>R$${precoFinal}</strong>
+        </table>
+        
+        <p>Então, para <strong>${qtde}</strong> lanches, ficara em um falor de <strong>R$${precoFinal.toFixed(2)}</strong>
         `
-        })    
+        })
     </script>
 </body>
 </html>
